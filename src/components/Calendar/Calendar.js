@@ -13,7 +13,6 @@ const Wrapper = styled.div`
 
 const Calendar = ({ users, activeMonth, setActiveMonth }) => {
   const monthsList = months.map((month, monthID) => {
-    console.log(Object.values(users[monthID]));
     return (
       <MonthCard
         key={monthID}

@@ -19,7 +19,7 @@ const useFetchUsers = (initial = []) => {
       .then(data => setUsers(data));
 
     return () => {
-      setUsers(initial);
+      setUsers([]);
     };
   }, []);
 
