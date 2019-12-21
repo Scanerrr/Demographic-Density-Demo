@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/demographic-density-demo/static/css/main.53809aff.chunk.css",
+    "main.js": "/demographic-density-demo/static/js/main.0ca219c0.chunk.js",
+    "main.js.map": "/demographic-density-demo/static/js/main.0ca219c0.chunk.js.map",
+    "runtime-main.js": "/demographic-density-demo/static/js/runtime-main.15cfab47.js",
+    "runtime-main.js.map": "/demographic-density-demo/static/js/runtime-main.15cfab47.js.map",
+    "static/js/2.0e92730d.chunk.js": "/demographic-density-demo/static/js/2.0e92730d.chunk.js",
+    "static/js/2.0e92730d.chunk.js.map": "/demographic-density-demo/static/js/2.0e92730d.chunk.js.map",
+    "index.html": "/demographic-density-demo/index.html",
+    "precache-manifest.4dfb79cfd405fc482609ec52f7f00d79.js": "/demographic-density-demo/precache-manifest.4dfb79cfd405fc482609ec52f7f00d79.js",
+    "service-worker.js": "/demographic-density-demo/service-worker.js",
+    "static/css/main.53809aff.chunk.css.map": "/demographic-density-demo/static/css/main.53809aff.chunk.css.map",
+    "static/js/2.0e92730d.chunk.js.LICENSE": "/demographic-density-demo/static/js/2.0e92730d.chunk.js.LICENSE"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.15cfab47.js",
+    "static/js/2.0e92730d.chunk.js",
+    "static/css/main.53809aff.chunk.css",
+    "static/js/main.0ca219c0.chunk.js"
+  ]
+}
