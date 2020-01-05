@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/Demographic-Density-Demo/precache-manifest.ebadbdde502e1337c65021714942c691.js"
+  "/Demographic-Density-Demo/precache-manifest.ef9f0a52428588aed4b9bd5e44fadfd0.js"
 );
 
 self.addEventListener('message', (event) => {
