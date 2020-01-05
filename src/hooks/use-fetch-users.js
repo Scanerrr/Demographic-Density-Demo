@@ -7,23 +7,28 @@ const months = getMonthsList();
 
 const useFetchUsers = (initial = []) => {
   const [users, setUsers] = useState(initial);
+  const [error, setError] = useState(false);
 
   useEffect(() => {
     fetch(FETCH_URL)
       .then(res => res.json())
       .then(data => {
-        return months.map((monthName, monthID) =>
+        return months.map(monthID =>
           data.filter(user => monthID === getMonthIDByDate(user.dob))
         );
       })
-      .then(data => setUsers(data));
+      .then(data => setUsers(data))
+      .catch(err => {
+        setError(`${err.name} ${err.message}`);
+      });
 
     return () => {
       setUsers([]);
+      setError(false);
     };
   }, []);
 
-  return [users];
+  return { users, error };
 };
 
 export { useFetchUsers };
