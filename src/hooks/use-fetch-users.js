@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { getMonthsList, getMonthIDByDate } from "../helpers";
 
-const FETCH_URL = `https://yschool.getsandbox.com/users`;
+const FETCH_URL = `https://yalantis-react-school.herokuapp.com/api/task0/users`;
 
 const months = getMonthsList();
 
@@ -13,7 +13,7 @@ const useFetchUsers = (initial = []) => {
     fetch(FETCH_URL)
       .then(res => res.json())
       .then(data => {
-        return months.map(monthID =>
+        return months.map((_, monthID) =>
           data.filter(user => monthID === getMonthIDByDate(user.dob))
         );
       })
